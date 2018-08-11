@@ -89,6 +89,7 @@ void setup() {
   pinMode(KEY_MENU, INPUT_PULLUP);
   pinMode(KEY_UP, INPUT_PULLUP);
   pinMode(KEY_DOWN, INPUT_PULLUP);
+
   if (settings.vMax() == 0) {
     vMaxCalibration();
   }

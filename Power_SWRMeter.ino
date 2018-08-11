@@ -63,7 +63,7 @@ void initScreens() { // Screen Preparation
   screen[V_MAX] = Screen("Calibration", "vMax", settings.vMax());
   screen[V_MAX].setDecimalPoint(3);
   screen[VSTEP] = Screen("vStep", "V/dB", settings.vStep());
-  screen[VSTEP].setLimits(2.0, 2.3);
+  screen[VSTEP].setLimits(.015, .042);
   screen[VSTEP].setDecimalPoint(3);
   screen[VSTEP].setStep(0.001);
   screen[MIN_P] = Screen("Offset", "dBm", settings.minPow());
